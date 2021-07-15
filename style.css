@@ -1,0 +1,199 @@
+
+
+@media (prefers-color-scheme: dark), (prefers-color-scheme: darkest) {
+  label {
+    color: #E0E0E0;
+  }
+}
+
+/* tweaks for better appearance */
+sp-textarea { display: block; width: 240px; }
+
+/* tooltip */
+.tooltip {
+  position: relative;
+}
+
+.tooltip sp-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 133%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.tooltip:hover sp-tooltip {
+  display: block;
+}
+
+/* dialog styles */
+:not(.xd) dialog {
+  width: 480px;
+  height: 240px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+:not(.xd) dialog form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+:not(.xd) dialog form > * {
+  flex: 0 0 auto;
+  margin: 8px;
+}
+
+.xd dialog form sp-divider {
+  width: calc(100% - 16px);
+}
+
+dialog form sp-body {
+  flex: 1 1 auto;
+}
+
+
+.wrapper {
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+width: 100vw;
+height: 100vh;
+flex-direction: column;
+display: flex;
+padding: 0px;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+.xd .wrapper {
+width: 100%;
+height: 100%;  
+}
+
+/* tabs */
+.sp-tabs {
+flex: 0 0 auto;
+display: flex;
+flex-direction: row;
+border-bottom: 2px solid #3E3E3E; 
+}
+
+.sp-tab {
+margin-right: 0px;
+}
+.sp-tab sp-label {
+color: rgba(255,255,255,0.75);
+}
+
+.sp-tab:hover sp-label {
+color: white;
+}
+
+.sp-tab.selected {
+border-bottom: 2px solid white;
+margin-bottom: -2px;
+}
+.sp-tab.selected sp-label {
+color: white;
+}
+@media (prefers-color-scheme: light), (prefers-color-scheme: lightest) {
+.sp-tabs {
+  border-bottom: 2px solid #B8B8B8;
+}
+.sp-tab sp-label {
+  color: rgba(0,0,0,0.66);
+}
+.sp-tab:hover sp-label {
+  color: black;
+}
+.sp-tab.selected {
+  border-bottom: 2px solid black;
+}
+.sp-tab.selected sp-label {
+  color: black;
+}
+}
+.sp-tab-page {
+  display: none;
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  padding: 0px 0;
+  flex-direction: column;
+}
+.sp-tab-page.visible {
+  display: flex;
+}
+.sp-tab-page > * {
+flex: 0 0 auto;
+}
+
+/* groups */
+.group {
+  flex: 0 0 auto;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  
+}
+#sp-native-tab-page .group {
+background-color: transparent;
+border: 1px solid rgba(0,0,0,0.5);
+}
+.group > sp-label:not(.safe) {
+  position: absolute;
+  top: -1em;
+  left: 0px;
+  background-color: #3E3E3E;
+  display: block;
+  padding: 0px 0px;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: light), (prefers-color-scheme: lightest) {
+.group {
+  background-color: rgba(0,0,0,0.0625);
+}
+.group > sp-label:not(.safe) {
+  background-color: #E8E8E8;
+}
+}
+
+.group > :not(sp-label) {
+margin: 0px;
+}
+
+/* icons */
+.icon {
+
+height: 20px;
+width: 20px;
+}
+.icon svg {
+height: 20px;
+width: 20px;
+}
+
+/* logs */
+.console {
+flex: 0 0 auto;
+overflow: scroll;
+height: 140px;
+display: none;
+}
+.console.visible {
+display: block;
+}
+
+.console #logs {
+white-space: pre;
+font-family: menlo;
+font-size: 8px;
+color: black;
+background-color: white;
+}
