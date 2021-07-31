@@ -1,6 +1,5 @@
-# Theme Plugin for Adobe Photoshop (Vanilla API 2)
+# Theme Plugin for Adobe Photoshop (Vanilla)
  
-
 This plugin is for showing how to change the Photoshop Theme by clicking an icon.
 
 ## Loading in Photoshop
