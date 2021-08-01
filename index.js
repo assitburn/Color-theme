@@ -1,6 +1,6 @@
 async function auto_run(){
   button_set();
-  await require("photoshop").core.executeAsModal(function(){readout()}, {"commandName": "User Cancel Test"});
+  await require("photoshop").core.executeAsModal(readout);
 }
 async function readout(){
   const batchPlay = require("photoshop").action.batchPlay;
@@ -47,9 +47,9 @@ async function button_set(){
   document.getElementById("btn_light").innerHTML ='<div slot="icon" class="icon"><svg height="20" viewBox="0 0 20 20" width="20" slot="icon" focusable="false" aria-hidden="true" role="img"><rect x="0" y="0" width="20" height="20" style="fill:#eff0ef;"/></svg></div>';
 }
 async function colorchange(wert){
-  await require("photoshop").core.executeAsModal(function(){colorchange_action(wert)}, {"commandName": "User Cancel Test"});
+  await require("photoshop").core.executeAsModal(function(){colorchange_action(wert)});
   button_set();
-  await require("photoshop").core.executeAsModal(function(){auslesen()}, {"commandName": "User Cancel Test"});
+  await require("photoshop").core.executeAsModal(readout);
 }
 
 async function colorchange_action(wert){
