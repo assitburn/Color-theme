@@ -52,7 +52,7 @@ async function colorchange(wert){
   await require("photoshop").core.executeAsModal(readout);
 }
 
-async function colorchange_action(wert){
+async function colorchange_action(theme){
   const batchPlay = require("photoshop").action.batchPlay;
   const result = await batchPlay(
   [
@@ -73,7 +73,7 @@ async function colorchange_action(wert){
           "_obj": "interfacePrefs",
           "kuiBrightnessLevel": {
               "_enum": "uiBrightnessLevelEnumType",
-              "_value": wert
+              "_value": theme
           }
         },
         "_isCommand": true,
