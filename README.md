@@ -1,6 +1,6 @@
-# Starter Photoshop Plugin (Vanilla)
+# Photoshop Plugin to change the Color-Theme (Vanilla)
 
-This starter plugin is a good place to get started when developing for Photoshop. It does not rely on any frameworks or build steps -- hence the name "Vanilla".
+Change the Color-Themes easyly.
 
 ## Loading in Photoshop
 
