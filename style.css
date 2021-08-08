@@ -1,27 +1,4 @@
-.footer {
-  align-content: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 20px;
-  width: 100%;
-  background-color: none;
-  color: white;
-  text-align: left;
-  margin-left: 15px;
-}
-.footer2 {
-  align-content: center;
-  position: fixed;
-  left: 0;
-  bottom: 27px;
-  height: 25px;
-  width: 100%;
-  background-color: none;
-  /* color: white; */
-  text-align: left;
-  margin-left: 10px;
-}
+
 
 @media (prefers-color-scheme: dark), (prefers-color-scheme: darkest) {
   label {
@@ -35,41 +12,6 @@ sp-textarea { display: block; width: 240px; }
 /* tooltip */
 .tooltip {
   position: relative;
-  /*display: inline-block;*/
-  /*border-bottom: 1px dotted black; */
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 0px 0;
-  position: absolute;
-  /*z-index: 1;*/
-  bottom: 125%;
-  /*left: 50%;/*
-  /*margin-left: -60px; */
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }
 
 .tooltip sp-tooltip {
@@ -120,11 +62,12 @@ dialog form sp-body {
 position: absolute;
 top: 0; left: 0; right: 0; bottom: 0;
 width: 100vw;
-height: 91.5vh;
+height: 100vh;
 flex-direction: column;
 display: flex;
-padding: 12px;
+padding: 0px;
 overflow-x: hidden;
+overflow-y: hidden;
 }
 
 .xd .wrapper {
@@ -141,7 +84,7 @@ border-bottom: 2px solid #3E3E3E;
 }
 
 .sp-tab {
-margin-right: 12px;
+margin-right: 0px;
 }
 .sp-tab sp-label {
 color: rgba(255,255,255,0.75);
@@ -152,36 +95,34 @@ color: white;
 }
 
 .sp-tab.selected {
-border-bottom: 2px solid rgb(43, 145, 219);
+border-bottom: 2px solid white;
 margin-bottom: -2px;
 }
 .sp-tab.selected sp-label {
-color: rgb(43, 145, 219);
+color: white;
 }
 @media (prefers-color-scheme: light), (prefers-color-scheme: lightest) {
-  .sp-tabs {
-    /*border-bottom: 2px solid #B8B8B8;*/
-    border-bottom: 2px solid #000000;
-  }
-  .sp-tab sp-label {
-    color: rgba(0,0,0,0.66);
-  }
-  .sp-tab:hover sp-label {
-    color: black;
-  }
-  .sp-tab.selected {
-    border-bottom: 2px solid black;
-  }
-  .sp-tab.selected sp-label {
-    color: black;
-  }
-  
+.sp-tabs {
+  border-bottom: 2px solid #B8B8B8;
+}
+.sp-tab sp-label {
+  color: rgba(0,0,0,0.66);
+}
+.sp-tab:hover sp-label {
+  color: black;
+}
+.sp-tab.selected {
+  border-bottom: 2px solid black;
+}
+.sp-tab.selected sp-label {
+  color: black;
+}
 }
 .sp-tab-page {
   display: none;
   flex: 1 1 auto;
   overflow-y: scroll;
-  padding: 12px 0;
+  padding: 0px 0;
   flex-direction: column;
 }
 .sp-tab-page.visible {
@@ -196,10 +137,9 @@ flex: 0 0 auto;
   flex: 0 0 auto;
   background-color: rgba(0,0,0,0.5);
   border-radius: 4px;
-  padding: 24px 12px 12px 12px;
+  padding: 0px 0px 0px 0px;
   position: relative;
-  margin-top: 1em;
-  margin-bottom: 12px;
+  
 }
 #sp-native-tab-page .group {
 background-color: transparent;
@@ -211,29 +151,26 @@ border: 1px solid rgba(0,0,0,0.5);
   left: 0px;
   background-color: #3E3E3E;
   display: block;
-  padding: 4px 12px;
+  padding: 0px 0px;
   border-radius: 4px;
 }
 
 @media (prefers-color-scheme: light), (prefers-color-scheme: lightest) {
-  .group {
-    background-color: rgba(0,0,0,0.0625);
-  }
-  .group > sp-label:not(.safe) {
-    background-color: #E8E8E8;
-  }
-  .snackbar {
-    background-color: rgb(172, 172, 172);
-  }
+.group {
+  background-color: rgba(0,0,0,0.0625);
+}
+.group > sp-label:not(.safe) {
+  background-color: #E8E8E8;
+}
 }
 
 .group > :not(sp-label) {
-margin: 6px;
+margin: 0px;
 }
 
 /* icons */
 .icon {
-fill: currentColor;
+
 height: 20px;
 width: 20px;
 }
@@ -259,46 +196,4 @@ font-family: menlo;
 font-size: 8px;
 color: black;
 background-color: white;
-}
-
-
-.toast {
-  position: absolute;
-  bottom: 15px; left: 0; right: 0;
-  padding: 8px 16px;
-  background-color: rgb(18,128,92);
-  color: white;
-  display: none;
-  border-radius: 4px;
-}
-
-.toast.visible {
-  display: block;
-}
-.toast_gelb {
-  position: absolute;
-  bottom: 15px; left: 0; right: 0;
-  padding: 8px 16px;
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
-  display: none;
-  border-radius: 4px;
-}
-
-.toast_gelb.visible {
-  display: block;
-}
-
-.toast_red_breit {
-  position: absolute;
-  bottom: 15px; left: 0; right: 0;
-  padding: 8px 130px;
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
-  display: none;
-  border-radius: 4px;
-}
-
-.toast_red_breit.visible {
-  display: block;
 }
