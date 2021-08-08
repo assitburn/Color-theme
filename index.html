@@ -2,64 +2,30 @@
 <html>
 <head>
   <link  id="hostStyle" rel="stylesheet" href="style.css"/>
-    <script src="index.js"></script>    
+    <!--<script src="index.js"></script>-->
+    <script src="js/function.js"></script>  
+    <script src="js/vorher-nachher.js"></script>
+    <script src="js/variablen.js"></script>
+  
 </head>
-<style>
-  body {
-    color: white;
-    padding: 0 16px;
-  }
-  li:before {
-    content: '• ';
-    width: 3em;
-  }
 
-  #layers {
-    border: 1px solid #808080;
-    border-radius: 4px;
-    padding: 16px;
-  }
-</style>
 <body>
-  <div class="wrapper"><div class="sp-tab-page visible" id="sp-spectrum-start-tab-page">
-    <div class="group">
-      <sp-heading>
-        <sp-action-button label="dark" id="btn_dark">
-          <div slot="icon" class="icon">
-            <svg height="20" viewBox="0 0 20 20" width="20" slot="icon" focusable="false" aria-hidden="true" role="img">
-              <rect x="0" y="0" width="20" height="20" style="fill:#353535;"/>
-            </svg>
-          </div>
-        </sp-action-button>
-      </sp-heading>
-      <sp-heading>
-        <sp-action-button label="dark-light" id="btn_dark-light">
-          <div slot="icon" class="icon">
-            <svg height="20" viewBox="0 0 20 20" width="20" slot="icon" focusable="false" aria-hidden="true" role="img">
-              <rect x="0" y="0" width="20" height="20" style="fill:#545454;"/>
-            </svg>
-          </div>
-        </sp-action-button>
-      </sp-heading>
-      <sp-heading>
-        <sp-action-button label="light-dark" id="btn_light_dark">
-          <div slot="icon" class="icon">
-            <svg height="20" viewBox="0 0 20 20" width="20" slot="icon" focusable="false" aria-hidden="true" role="img">
-              <rect x="0" y="0" width="20" height="20" style="fill:#b6b7b7;"/>
-            </svg>
-          </div>
-        </sp-action-button>
-      </sp-heading>
-      <sp-heading>
-        <sp-action-button label="light" id="btn_light">
-          <div slot="icon" class="icon">
-            <svg height="20" viewBox="0 0 20 20" width="20" slot="icon" focusable="false" aria-hidden="true" role="img">
-              <rect x="0" y="0" width="20" height="20" style="fill:#eff0ef;"/>
-            </svg>
-          </div>
-        </sp-action-button>
-      </sp-heading>
+  <div class="wrapper">
+    <div class="sp-tab-page visible" id="sp-spectrum-start-tab-page">
+      <div class="group"><sp-label>Rand</sp-label>
+        <sp-action-button size="s" id="btn_rand_reset">Reset</sp-action-button>
+        <sp-slider id="FQ-rand-slider" min="1" max="100" step="1" value="10"><sp-label ID="radius" slot="label">Randstärke in Pixel</sp-label></sp-slider>
+      </div>
+      <div class="group"><sp-label>Vorher-Nachher</sp-label>
+        <sp-heading><p> <sp-button variant="primary" id="btn_vorher_nachher">Vorher-Nachher</sp-button></p></sp-heading>
+        <sp-heading><sp-switch id="switch_kopie" label="Kopie rechts / oben">Kopie rechts / oben</sp-switch></sp-heading><br>
+        
+      </div>
     </div>
-  </div></div>
+  </div>
+  <div class="footer"><p><sp-label id="copyright">&copy; 2021 Carsten Gerdes</sp-label></p></div>
+  <sp-body class="toast" size="s">Temp container</sp-body>
+  <sp-body class="toast_red_breit" size="s">Temp container</sp-body>
+  <sp-body class="toast_gelb" size="s">Temp container</sp-body>
 </body>
 </html>

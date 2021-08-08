@@ -1,0 +1,16 @@
+var ebene_original ="";
+var ebene_bearbeitet="";
+var label_zusammengefasst="zusammengefasst-fuer-vorher-nachher";
+var label_layerneu="Vorher-Nachher";
+var layercount = 0;
+var label_alle_ebenen_auswaehlen="alle Ebenen ausgewählt";
+var label_in_neue_datei_kopieren="in neue Datei kopiert";
+var label_rahmen_hinzufuegen ="Rahmen hinzugefügt";
+var hintergrund_vorhanden="";
+var original_document=0;
+var neues_document=0;
+var label_32bitohneunterstützung="keine 32 Bit Unterstützung";
+var label_kein_doc_geladen="kein Dokument geladen";
+var label_nur_rgb_farbraum="nur RGB-Farbraum wird unterstützt";
+var rand = 10;
+var rand2 = rand * 2;
