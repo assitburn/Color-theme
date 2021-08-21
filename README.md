@@ -1,5 +1,4 @@
 # Theme Plugin for Adobe Photoshop (Vanilla API 2) Version 22.5.0
-  (at this moment the Beta-Version)
 
 This plugin is for showing how to change the Photoshop Theme by clicking an icon.
 
