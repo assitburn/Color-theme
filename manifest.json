@@ -16,7 +16,7 @@
   "requiredPermissions": {
 		"clipboard": "readAndWrite",
 		"launchProcess": "request",
-		"allowCodeGenerationFromStrings": true,
+		
 		"localFileSystem":"fullAccess",
     "network": {
 			"domains": ["www.paparozzi.de"]
