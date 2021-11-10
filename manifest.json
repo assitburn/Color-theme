@@ -1,18 +1,27 @@
 {
   "id": "color.change.theme",
   "name": "Color-theme",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.html",
+  "manifestVersion": 5,
   "host": [
     {
       "app": "PS",
-      "minVersion": "22.5.0",
+      "minVersion": "23.0.0",
         "data": {
           "apiVersion": 2
         }
     }
   ],
-  "manifestVersion": 4,
+  "requiredPermissions": {
+		"clipboard": "readAndWrite",
+		"launchProcess": "request",
+		"allowCodeGenerationFromStrings": true,
+		"localFileSystem":"fullAccess",
+    "network": {
+			"domains": ["www.paparozzi.de"]
+		}
+	},
   "entrypoints": [
     {
       "type": "panel",

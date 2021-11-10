@@ -1,6 +1,6 @@
-# Theme Plugin for Adobe Photoshop (Vanilla API 2) Version 22.5.0
+# Photoshop Plugin to change the Color-Theme (Vanilla)
 
-This plugin is for showing how to change the Photoshop Theme by clicking an icon.
+Change the Color-Themes easyly.
 
 ## Loading in Photoshop
 

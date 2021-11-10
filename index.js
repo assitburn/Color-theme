@@ -86,6 +86,7 @@ async function colorchange_action(theme){
     
   });
 }
+
 document.addEventListener("load",auto_run);
 
 document.getElementById("btn_dark").addEventListener("click", function(){colorchange("kPanelBrightnessDarkGray");});
