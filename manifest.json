@@ -1,41 +1,39 @@
 {
   "id": "color.change.theme",
   "name": "Color-theme",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.html",
-  "manifestVersion": 5,
   "host": [
     {
       "app": "PS",
-      "minVersion": "23.0.0",
+      "minVersion": "23.3.0",
         "data": {
           "apiVersion": 2
         }
     }
   ],
+  "manifestVersion": 5,
   "permissions": {
     "launchProcess": {
          "schemes": [ "https", "slack", "adbxd" ],
          "extensions": [ ".pdf", ".xd", ".ps" ]
     }, 
-    "webview": {
-      "allow": "yes"      
-    },
+    
     "clipboard": "readAndWrite",
     "allowCodeGenerationFromStrings": true,
-    "localFileSystem":"fullAccess"    
+    "localFileSystem":"fullAccess"
   },
   "requiredPermissions": {
     "launchProcess": {
       "schemes": [ "https", "slack", "adbxd" ],
       "extensions": [ ".pdf", ".xd", ".ps" ]
     },
-    "webview": {
-      "allow": "yes"
-    },
+  
     "clipboard": "readAndWrite",
     "allowCodeGenerationFromStrings": true,
-    "localFileSystem":"fullAccess"  
+    "localFileSystem":"fullAccess"
+  
+    
   },
   "entrypoints": [
     {
