@@ -1,12 +1,12 @@
 {
   "id": "color.change.theme",
   "name": "Color-theme",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.html",
   "host": [
     {
       "app": "PS",
-      "minVersion": "23.3.0",
+      "minVersion": "24.5.0",
         "data": {
           "apiVersion": 2
         }
